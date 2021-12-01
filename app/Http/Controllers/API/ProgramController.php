@@ -58,7 +58,7 @@ class ProgramController extends Controller
         if (is_null($program)) {
             return response()->json('Data not found', 404);
         }
-        return response()->json([new ProgramResource($program)]);
+        return response()->json(['ini adalah data program khusus id ' . $id, new ProgramResource($program)]);
     }
 
     /**
